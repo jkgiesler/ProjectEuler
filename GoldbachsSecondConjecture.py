@@ -8,10 +8,10 @@ would fall between 0 and 10000. Set methods are really useful in this code.
 '''
 def generatelst():
     n=3
-    biggest=1000
+    biggest=15000
     lst=[]
     
-    for i in range(2,10000):
+    for i in range(2,12000):
         lst.append(i)
     return lst
 

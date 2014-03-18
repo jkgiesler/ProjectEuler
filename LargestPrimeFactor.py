@@ -51,3 +51,24 @@ def problem3():
             nonprime=False
     
     print(max(divisors))
+
+
+##quick and dirty solution to Question 7####
+##which is the 10001 prime number
+#assuming -2 because a loss of 2 and an indexing issue
+def questoin8():
+    num=10001
+    stor=[]
+    i=3
+    while(len(stor)<10003):
+        if isprime(i):
+            stor.append(i)
+        i+=2
+    print(stor[9999])
+
+###quick and dirty solution to question 9######
+sumr=0
+for i in range(2000000):
+    if(isprime(i)):
+        sumr+=i
+print(sumr)
