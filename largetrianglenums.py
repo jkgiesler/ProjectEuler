@@ -1,28 +1,10 @@
-def isprime(n):
-    '''checks if n is prime'''    
-    n= abs(int(n))
-    
-    if n<2:
-        return False
-    if n==2:
-        return True
-    if not n & 1:
-        return False
-        
-    for x in range(3,int(n**.5)+1,2):
-        if n%x==0:           
-            return False
-            
-    return True
-
-
 def returndivisors(n):
     '''looks for a suitably large factor'''    
-    divisors=[]    
-    for x in range(2,int(n**.5)+1,1):
+    divisors=0    
+    for x in range(1,int(n**.5)+1):
         if n%x==0:
-            divisors.append(x)
-    return len(divisors)
+            divisors+=2
+    return divisors
 
 def generatetrianglenumbers():
     num = 0
@@ -34,13 +16,15 @@ def generatetrianglenumbers():
         count+=1
         yield num
         
+        
+
 z=generatetrianglenumbers()        
 n=0
 test=returndivisors(n)
-while(test < 500):    
+while(test < 500):
     test=returndivisors(n)
     
-    print(n)
+    print(n,'has ',test,'divisors')
     n=next(z)
 
     

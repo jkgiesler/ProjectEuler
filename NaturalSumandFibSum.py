@@ -29,7 +29,7 @@ def problem2():
     calculate all fibonocci numbers below 4million
     and determine the sum of the even ones
     '''
-    maxnum=4000000
+
     num=1
     oldnum=0
     nextnum=0
