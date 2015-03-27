@@ -13,3 +13,5 @@ def divisor_generator(n):
                 large_divisors.insert(0, n / i)
     for divisor in large_divisors:
         yield int(divisor)
+
+print(list(divisor_generator(12)))
