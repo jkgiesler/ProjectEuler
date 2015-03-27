@@ -1,4 +1,4 @@
 ProjectEuler
 ============
 
-Found https://projecteuler.net/. Thought I'd put some of my code from problems up. Python/C++ depending on my mood.
+My solutions to the first page or so of Project Euler problems. Written mostly in Python.
